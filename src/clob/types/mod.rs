@@ -308,7 +308,6 @@ sol! {
     /// <!-- The CLOB expects all `uint256` types, [`U256`], excluding `salt`, to be presented as a
     /// string so we must serialize as Display, which for U256 is lower hex-encoded string.
     /// -->
-    #[non_exhaustive]
     #[serde_as]
     #[derive(Serialize, Debug, Default, PartialEq)]
     struct Order {
