@@ -343,7 +343,6 @@ fn ser_salt<S: Serializer>(value: &U256, serializer: S) -> std::result::Result<S
     serializer.serialize_u64(v)
 }
 
-#[non_exhaustive]
 #[derive(Clone, Debug, Default, Serialize, Builder, PartialEq)]
 pub struct SignableOrder {
     pub order: Order,
