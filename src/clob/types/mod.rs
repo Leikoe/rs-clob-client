@@ -349,7 +349,6 @@ pub struct SignableOrder {
     pub order_type: OrderType,
 }
 
-#[non_exhaustive]
 #[derive(Debug, Builder, PartialEq)]
 pub struct SignedOrder {
     pub order: Order,
